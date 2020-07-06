@@ -11,7 +11,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <a class="navbar-brand" href="#">Animated Dropdown</a>
+        <a class="navbar-brand" href="#">FlatSpace</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -20,14 +20,14 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Click Me!
+              Menu
             </a>
               <!-- Here's the magic. Add the .animate and .slide-in classes to your .dropdown-menu and you're all set! -->
               <div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Edit Info</a>
+                <a class="dropdown-item" href="#">Edit Profile Picture</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="#">Something Else</a>
               </div>
             </li>
           </ul>
@@ -35,7 +35,21 @@
       </div>
     </nav>
     <div class="grid-container">
-      <div class="user-info"></div>
+      <div class="user-info">
+          <img src='https://ca.slack-edge.com/T02MD9XTF-UJW55RH1R-4a6e86f2bdb2-512'>
+          <h3>User Info </h3>
+          <h6>Username: CatLuvr69</h6>
+          <h6>Location: New York, NY</h6> 
+          <h6>About: I love Cats</h6>
+          <h6>Bio: Just a guy who loves software development, building tables, and furry friends </h6>
+          <h6>Interests:
+            <li>Cats</li>
+            <li>Marilyn Manson</li>
+            <li>Woodworking</li>
+          </h6>
+       
+        
+      </div>
       <div class="pictures"><header>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -77,10 +91,21 @@
         </div>
       </header>
       </div>
-      <div class="comments"><button type="button" class="btn btn-primary">Primary</button></div>
+      <div class="comments">
+        <div class='comments-inner'>
+            <ul>
+              <li>comment 1</li>
+            </ul>
+        </div>
+        <h1>Test</h1>
+        <button type="button" class="btn btn-primary">Primary</button></div>
       <div class="song-bar"></div>
     </div>
-
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+      <div class="container text-center">
+        <small>Copyright &copy; M&R Development</small>
+      </div>
+    </footer>
 
 
 
