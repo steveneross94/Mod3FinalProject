@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded',function(){
 let button = document.getElementById('showMore')
 let content = document.getElementById("model");
-const song = document.getElementById('song')
+let song = document.getElementById('song')
 let play = document.querySelector('.centered')
 
 
@@ -57,22 +57,22 @@ function showUser(user){
 
 getInfo()
 var playIt = true
-play.addEventListener('click',function(e) {
-  const song = document.getElementById('song')
-  if (playIt){ 
-    song.play()
-    playIt = false
-  play.innerHTML = `
-  <path d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"/>
-</svg>`}
-else{
-song.pause()
-playIt=true
-play.innerHTML = `<path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>`
-
-}
- 
+content.addEventListener('click', function(e){
+  console.log(e.target)
+//   let song = document.getElementById(`song.${e.target.parentNode.id}`)
+//   if(playIt){
+//   let play = e.target.parentNode.innerHTML =`
+//   <path d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"/>
+// </svg>`
+// song.play()
+// playIt = false
+// console.log(song)}
+// else{
+//   song.pause()
+//   playIt=true
+//   let play = e.target.parentNode.innerHTML = `<path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>`}
 })
+
 
 })
 // 
