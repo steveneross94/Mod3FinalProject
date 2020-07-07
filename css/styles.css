@@ -6,7 +6,38 @@
   grid-template-areas: "user-info pictures pictures pictures pictures" "user-info pictures pictures pictures pictures" "user-info comments comments comments comments" "user-info song-bar song-bar song-bar song-bar" "user-info . . . .";
 }
 
-.user-info { grid-area: user-info; }
+.button {
+  border-radius: 5px;
+  width: 45px;
+  height: 30px
+}
+
+.comments {
+  border: thick black;
+
+}
+
+.user-info { grid-area: user-info; 
+background-color:#f1f1f1;
+}
+
+.user-info > img {
+width: 100%;
+height: auto;
+border-radius: 50%;
+}
+.user-info > h3 {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.user-info > h6, li {
+  padding-left: 10px;
+}
+
+.user-info > h3 {
+  padding-top: 100px;
+}
 .carousel-item {
   height: 65vh;
   min-height: 350px;
