@@ -11,7 +11,7 @@ button.addEventListener('click',function(e){
     content.style.overflow = 'visible'
     button.innerHTML = `Show Less <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"/>
-  <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8 3.707 5.354 6.354a.5.5 0 1 1-.708-.708l3-3z"/>
+  <path class="play" fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8 3.707 5.354 6.354a.5.5 0 1 1-.708-.708l3-3z"/>
 </svg>`
   }
   else if(content.className == "row text-center text-lg-left close"){
@@ -38,7 +38,7 @@ function showUser(user){
     newDiv.innerHTML = `<audio loop src ='${e.file}' id="song.${e.id}"></audio>
           <img class="img-fluid img-thumbnail" src="${e.img_url}" height="500" width="500"alt="">
           <svg id=${e.id} class="centered"width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-play-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+            <path class="playB"d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
           </svg>
           <svg class="next"width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-double-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
@@ -58,19 +58,36 @@ function showUser(user){
 getInfo()
 var playIt = true
 content.addEventListener('click', function(e){
+<<<<<<< HEAD
   console.log(e.target)
   let song = document.getElementById(`song.${e.target.parentNode.id}`)
   if(playIt){
   let play = e.target.parentNode.innerHTML =`
   <path d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"/>
+=======
+  if(e.target.className.baseVal == "playB" ){
+    let song = document.getElementById(`song.${e.target.parentNode.id}`)
+  if(playIt){
+  let play = e.target.parentNode.innerHTML =`
+  <path class="pauseB" d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"/>
+>>>>>>> 7338adfbaa8b1643663ab874c73166a322e01142
 </svg>`
 song.play()
 playIt = false
 console.log(song)}
+<<<<<<< HEAD
 else{
   song.pause()
   playIt=true
   let play = e.target.parentNode.innerHTML = `<path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>`}
+=======
+}
+  else if (e.target.className.baseVal == "pauseB"){
+    let song = document.getElementById(`song.${e.target.parentNode.id}`)
+  song.pause()
+  playIt=true
+  let play = e.target.parentNode.innerHTML = `<path class="playB" d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>`}
+>>>>>>> 7338adfbaa8b1643663ab874c73166a322e01142
 })
 
 
