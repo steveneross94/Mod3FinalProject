@@ -1,9 +1,11 @@
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   gap: 1px 1px;
   grid-template-areas: "user-info pictures pictures pictures pictures" "user-info pictures pictures pictures pictures" "user-info comments comments comments comments" "user-info song-bar song-bar song-bar song-bar" "user-info . . . .";
+}
+
+.container {
+  padding: 0px
 }
 
 .button {
@@ -13,12 +15,26 @@
 }
 
 .comments {
-  border: thick black;
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
 
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  /* -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px; */
+  border-radius: 5px;
+
+  line-height: 1.4em;
+
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .user-info { grid-area: user-info; 
 background-color:#f1f1f1;
+font-family: 'Times New Roman', Times, serif;
 }
 
 .user-info > img {
@@ -48,11 +64,18 @@ border-radius: 50%;
   background-size: cover;
 }
 
-.pictures { grid-area: pictures; }
+.pictures { grid-area: pictures;
+height: auto
 
-.comments { grid-area: comments; }
+}
 
-.song-bar { grid-area: song-bar; }
+.comments { grid-area: comments;
+}
+
+.song-bar { grid-area: song-bar;
+height: auto;
+font-family: 'Times New Roman', Times, serif;
+}
 
 /* Change this breakpoint if you change the breakpoint of the navbar */
 
@@ -168,4 +191,3 @@ filter: invert(1);
   left: 50%;
   transform: translate(-50%, -50%);
 }
-	
