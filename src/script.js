@@ -58,36 +58,19 @@ function showUser(user){
 getInfo()
 var playIt = true
 content.addEventListener('click', function(e){
-<<<<<<< HEAD
-  console.log(e.target)
-  let song = document.getElementById(`song.${e.target.parentNode.id}`)
-  if(playIt){
-  let play = e.target.parentNode.innerHTML =`
-  <path d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"/>
-=======
   if(e.target.className.baseVal == "playB" ){
     let song = document.getElementById(`song.${e.target.parentNode.id}`)
   if(playIt){
   let play = e.target.parentNode.innerHTML =`
   <path class="pauseB" d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"/>
->>>>>>> 7338adfbaa8b1643663ab874c73166a322e01142
 </svg>`
 song.play()
 playIt = false
-console.log(song)}
-<<<<<<< HEAD
-else{
-  song.pause()
-  playIt=true
-  let play = e.target.parentNode.innerHTML = `<path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>`}
-=======
-}
-  else if (e.target.className.baseVal == "pauseB"){
+}} else if (e.target.className.baseVal == "pauseB"){
     let song = document.getElementById(`song.${e.target.parentNode.id}`)
   song.pause()
   playIt=true
   let play = e.target.parentNode.innerHTML = `<path class="playB" d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>`}
->>>>>>> 7338adfbaa8b1643663ab874c73166a322e01142
 })
 
 
