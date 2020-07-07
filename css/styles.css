@@ -13,7 +13,8 @@
 }
 
 .comments {
-  border: thick;
+  border: thick black;
+
 }
 
 .user-info { grid-area: user-info; 
