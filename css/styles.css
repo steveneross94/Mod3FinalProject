@@ -68,3 +68,73 @@
   -webkit-animation-name: slideIn;
   animation-name: slideIn;
 }
+
+#model {
+	margin: 20px 10px;
+	padding: 0 5px;
+	float: left;
+  max-height: 230px;
+  opacity: 1;
+ }
+  
+  #showMore{
+    text-align: center;
+  }
+
+
+.img-thumbnail {
+  border-top-left-radius: 0.55rem;
+    border-top-right-radius: 0.55rem;
+    border-bottom-right-radius: 0.55rem;
+    border-bottom-left-radius: 0.55rem;
+    box-shadow: 0 0 15px black;
+}
+
+.centered{
+  position: absolute;
+height: 30px;
+cursor: pointer;
+width: 30px;
+z-index:2 ;
+bottom: 10%;
+filter: invert(1);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.next{
+  position: absolute;
+  height: 28px;
+  cursor: pointer;
+  width: 30px;
+  z-index:2 ;
+  bottom: 10%;
+  filter: invert(1);
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+.prev{
+  position: absolute;
+  height: 28px;
+  cursor: pointer;
+  width: 30px;
+  z-index:2 ;
+  bottom: 10%;
+  filter: invert(1);
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.paused{
+  position: absolute;
+height: 30px;
+cursor: pointer;
+width: 30px;
+z-index:2 ;
+bottom: 10%;
+filter: invert(1);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+	
