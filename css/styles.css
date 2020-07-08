@@ -200,6 +200,12 @@ textarea.form-control{
     height: auto;
     /* border-inline-end-width: inherit; */
     width: 70%;
-    align-items: center;
+    /* align-items: center; */
 }
 
+#comment-btn {
+  margin-left: 79.3%;
+  background-color: #d6d8d9;
+  color: #212529;
+  border-color: #c6c8ca
+}
