@@ -204,8 +204,28 @@ textarea.form-control{
 }
 
 #comment-btn {
-  margin-left: 79.3%;
+  margin-left: 81%;
   background-color: #d6d8d9;
   color: #212529;
   border-color: #c6c8ca
+}
+
+.media text-muted pt-3 {
+  margin-left: 10px;
+}
+
+#location-form {
+  margin-left: 8px;
+}
+
+#about-form {
+  margin-left: 24px
+}
+
+#interest-form {
+  margin-left: 9.5px;
+}
+
+#edit-form {
+  margin-left: 5px
 }

@@ -1,5 +1,3 @@
-console.log("Hi")
-
 document.addEventListener("DOMContentLoaded", () => {
     let userName = document.querySelector("#username")
     let location = document.querySelector("#location")
@@ -18,10 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const renderUserInfo = (user) => {
-
+        userInfo.id = `${user.id}`
         let getUl = document.getElementById('posts')
         document.addEventListener('submit',function(e){
-        console.log(e.target.post.value)
+        // console.log(e.target.post.value)
         e.preventDefault()
         let newLi = document.createElement('div')
         newLi.innerHTML = `<div class="media text-muted pt-3">
@@ -45,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
         })
 
         userInfo.innerHTML = `
-        <img src='${user.img_url}'>
+        <img id="imgurl" name='${user.img_url}'src='${user.img_url}'>
         <h3 id="username">${user.username}</h3>
         <h6 id="location">Location: ${user.location}</h6> 
         <h6 id="about">About: ${user.about}</h6>
