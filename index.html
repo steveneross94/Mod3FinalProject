@@ -24,8 +24,8 @@
             </a>
               <!-- Here's the magic. Add the .animate and .slide-in classes to your .dropdown-menu and you're all set! -->
               <div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Edit Info</a>
-                <a class="dropdown-item" href="#">Edit Profile Picture</a>
+                <a class="dropdown-item" id="edit-info" href="#">Edit Info</a>
+                <a class="dropdown-item" id="edit-profile-picture" href="#">Edit Profile Picture</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Something Else</a>
               </div>
@@ -43,27 +43,42 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
           </ol>
           <div class="carousel-inner" role="listbox">
             <!-- Slide One - Set the background image for this slide in the line below -->
-            <div class="carousel-item active" style="background-image: url('https://source.unsplash.com/RCAhiGJsUUE/1920x1080')">
+            <div class="carousel-item active" style="background-image: url('assets/images/IMG_0879.JPG')">
               <div class="carousel-caption d-none d-md-block">
-                <h3 class="display-4">First Slide</h3>
-                <p class="lead">This is a description for the first slide.</p>
+                <p class="lead">Angels Landing, Zion Ntl Park, Utah, USA</p>
               </div>
             </div>
             <!-- Slide Two - Set the background image for this slide in the line below -->
-            <div class="carousel-item" style="background-image: url('https://source.unsplash.com/wfh8dDlNFOk/1920x1080')">
+            <div class="carousel-item" style="background-image: url('assets/images/IMG_0880.JPG')">
               <div class="carousel-caption d-none d-md-block">
-                <h3 class="display-4">Second Slide</h3>
-                <p class="lead">This is a description for the second slide.</p>
+                <p class="lead">Joey poking his head out from his mother's pouch</p>
               </div>
             </div>
             <!-- Slide Three - Set the background image for this slide in the line below -->
-            <div class="carousel-item" style="background-image: url('https://source.unsplash.com/O7fzqFEfLlo/1920x1080')">
+            <div class="carousel-item" style="background-image: url('assets/images/IMG_0881.JPG')">
               <div class="carousel-caption d-none d-md-block">
-                <h3 class="display-4">Third Slide</h3>
-                <p class="lead">This is a description for the third slide.</p>
+                <p class="lead">View from Rincon Hill, San Francisco, CA, USA</p>
+              </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('assets/images/IMG_0882.JPG')">
+              <div class="carousel-caption d-none d-md-block">
+                <p class="lead">City View, Manhattan, NY, USA</p>
+              </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('assets/images/IMG_0883.JPG')">
+              <div class="carousel-caption d-none d-md-block">
+                <p class="lead">High-res water pearls</p>
+              </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('assets/images/IMG_0884.JPG')">
+              <div class="carousel-caption d-none d-md-block">
+                <p class="lead">AAAAAAAAAAAAAAAAH</p>
               </div>
             </div>
           </div>
@@ -107,7 +122,7 @@
             <div class="form-group">
               <form>
               <label for="exampleFormControlTextarea1"></label>
-              <textarea name="post" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write a Post Here..."></textarea>   <button type="submit" class="btn btn-primary mb-2">Post</button>
+              <textarea name="post" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write a Post Here..."></textarea>   <button type="submit" class="btn btn-primary mb-2" id="comment-btn">Post</button>
                   </form>
             </div>
 
