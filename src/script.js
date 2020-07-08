@@ -66,9 +66,7 @@ content.addEventListener('click', function(e){
 </svg>`
 song.play()
 playIt = false
-console.log(song)}
-}
-  else if (e.target.className.baseVal == "pauseB"){
+}} else if (e.target.className.baseVal == "pauseB"){
     let song = document.getElementById(`song.${e.target.parentNode.id}`)
   song.pause()
   playIt=true
