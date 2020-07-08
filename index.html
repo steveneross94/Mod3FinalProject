@@ -113,18 +113,30 @@
         
       </div>
         <div class="comments">
-          <h2>Comments</h2>
-            <ul class="comment-list">
+            <ul id="posts" class="comment-list">
+              <div class="my-3 p-3 bg-white rounded box-shadow">
+                <h6 class="border-bottom border-gray pb-2 mb-0">Recent Post</h6>
+                <div class="media text-muted pt-3">
+                  <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" class="mr-2 rounded" width="32" height="32">
+                  <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                    <strong class="d-block text-gray-dark">@username</strong>
+                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                  </p>
+                </div>
             </ul>
-          <form>
-            <label>Leave a Comment</label><br>
-            <textarea name="comment" id="comment"></textarea><br>
-            <input type="submit" value="Add Comment">
-          </form>
+            <div class="form-group">
+              <form>
+              <label for="exampleFormControlTextarea1"></label>
+              <textarea name="post" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write a Post Here..."></textarea>   <button type="submit" class="btn btn-primary mb-2">Post</button>
+                  </form>
+            </div>
+
+      
         </div>
-     
+     <br><br><br><br> <br><br><br><br>
     </div>
-    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+    
+    <footer id="footer" class="py-4 bg-dark text-white-50">
       <div class="container text-center">
         <small>Copyright &copy; M&R Development</small>
       </div>
