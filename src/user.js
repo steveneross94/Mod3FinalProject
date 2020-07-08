@@ -18,6 +18,30 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const renderUserInfo = (user) => {
+
+        let getUl = document.getElementById('posts')
+        document.addEventListener('submit',function(e){
+        console.log(e.target.post.value)
+        e.preventDefault()
+        let newLi = document.createElement('div')
+        newLi.innerHTML = `<div class="media text-muted pt-3">
+        <img src="${user.img_url}" alt="" class="mr-2 rounded" width="32" height="32">
+        <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+        <strong class="d-block text-gray-dark">@${user.username}</strong>
+           ${e.target.post.value}
+        </p>
+        </div>`
+        getUl.append(newLi)
+        fetch('http://localhost:3000/api/v1/comments',{
+            method: 'POST',
+            body: JSON.stringify({
+               user_id:`${user.id}`,
+               text : `${e.target.post.value}`
+            }),
+            headers: {'content-type':'application/json'}
+        })
+        })
+
         userInfo.innerHTML = `
         <img src='${user.img_url}'>
         <h3 id="username">${user.username}</h3>

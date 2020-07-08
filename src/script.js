@@ -32,6 +32,18 @@ const getInfo = ()=>{fetch('http://localhost:3000/api/v1/users')
 
 function showUser(user){
   console.log(user.songs)
+  let getUl = document.getElementById('posts')
+  user.comments.forEach(function(e) {
+    let newLi = document.createElement('div')
+    newLi.innerHTML = `<div class="media text-muted pt-3">
+    <img src="${user.img_url}" alt="" class="mr-2 rounded" width="32" height="32">
+    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+    <strong class="d-block text-gray-dark">@${user.username}</strong>
+       ${e.text}
+    </p>
+    </div>`
+    getUl.append(newLi)
+  })
   user.songs.forEach(function(e){
     let newDiv = document.createElement('div')
     newDiv.className = "col-lg-3 col-md-4 col-6"
@@ -72,15 +84,7 @@ playIt = false
   playIt=true
   let play = e.target.parentNode.innerHTML = `<path class="playB" d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>`}
 })
-let getUl = document.getElementById('posts')
-document.addEventListener('submit',function(e){
-console.log(e.target.post.value)
-e.preventDefault()
-let newLi = document.createElement('div')
-newLi.className = "newPost"
-newLi.innerHTML = `${e.target.post.value}`
-getUl.append(newLi)
-})
+
 
 
 })
