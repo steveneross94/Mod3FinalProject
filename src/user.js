@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </p>
         </div>`
         getUl.append(newLi)
+        
         fetch('http://localhost:3000/api/v1/comments',{
             method: 'POST',
             body: JSON.stringify({
@@ -40,6 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }),
             headers: {'content-type':'application/json'}
         })
+        e.target.reset()
         })
 
         userInfo.innerHTML = `
