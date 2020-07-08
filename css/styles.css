@@ -38,7 +38,7 @@ font-family: 'Times New Roman', Times, serif;
 }
 
 .user-info > img {
-width: 100%;
+width: 50%;
 height: auto;
 border-radius: 50%;
 }
@@ -191,3 +191,17 @@ filter: invert(1);
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+#model{
+  padding: 10px;
+}
+
+textarea.form-control{
+  margin: auto;
+    /* padding-right: 40%; */
+    height: auto;
+    /* border-inline-end-width: inherit; */
+    width: 70%;
+    align-items: center;
+}
+
