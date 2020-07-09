@@ -125,7 +125,7 @@ font-family: 'Times New Roman', Times, serif;
 	margin: 20px 10px;
 	padding: 0 5px;
 	float: left;
-  max-height: 230px;
+  max-height: 350px;
   opacity: 1;
  }
   
@@ -140,6 +140,7 @@ font-family: 'Times New Roman', Times, serif;
     border-bottom-right-radius: 0.55rem;
     border-bottom-left-radius: 0.55rem;
     box-shadow: 0 0 15px black;
+    margin-bottom: 13%;
 }
 
 .centered{
@@ -209,3 +210,35 @@ textarea.form-control{
   color: #212529;
   border-color: #c6c8ca
 }
+
+.pull-right{
+  left: auto;
+    transform: translate(-100%, 130%);
+}
+
+.outer{
+  color: #b13b3d;
+  cursor: pointer;
+}
+
+.inner{
+  cursor: pointer;
+  color: #b13b3d;
+}
+
+svg.bi.bi-x-circle{
+  cursor: pointer;
+}
+body{
+  background-color: #f5f5f5;
+  height: 100%;
+  overflow:auto;
+  padding-bottom:0px;
+}
+
+
+
+
+
+
+
