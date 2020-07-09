@@ -1,10 +1,13 @@
 body {
   background-color: #F1f1f1;
-  margin: 10px
+  /* margin: 10px */
+
 }
 .grid-container {
   display: grid;
   gap: 1px 1px;
+  margin-right: 20px;
+  margin-top: 10px;
   grid-template-areas: "user-info pictures pictures pictures pictures" "user-info pictures pictures pictures pictures" "user-info comments comments comments comments" "user-info song-bar song-bar song-bar song-bar" "user-info . . . .";
 }
 
@@ -39,7 +42,7 @@ body {
 }
 
 .user-traits {
-  margin-top: 50px;
+  margin-top: 150px;
 }
 
 .user-traits > h3,h6 {
@@ -48,7 +51,8 @@ body {
 
 .user-info { grid-area: user-info; 
 margin: 10px;
-margin-left: 0px;
+margin-bottom: 900px;
+margin-left: 10px;
 background-color: white;
 font-family: 'Times New Roman', Times, serif;
 border-radius: 15px;
@@ -66,6 +70,9 @@ border-radius: 50%;
 #navbar {
   background: white;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
 }
 .user-info > h3 {
   padding-top: 10px;
@@ -94,7 +101,7 @@ border-radius: 50%;
 }
 
 .pictures { grid-area: pictures;
-height: auto
+object-position: center;
 
 }
 
@@ -178,6 +185,8 @@ height: auto;
 #showMore{
   text-align: center;
   background-color: #F1f1f1;
+  margin-right: 30px;
+  margin-left: 30px;
 }
 
 
@@ -344,3 +353,18 @@ margin-right: 30px
 
 }
 
+
+#footer{
+  width: 100%;
+  position: absolute;
+}
+
+.text-center {
+  text-align: center!important;
+}
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  
+}
