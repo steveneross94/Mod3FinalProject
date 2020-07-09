@@ -187,6 +187,7 @@ height: auto;
     border-bottom-right-radius: 0.55rem;
     border-bottom-left-radius: 0.55rem;
     box-shadow: 0 0 15px black;
+    margin-top: 12px
 }
 
 .centered{
