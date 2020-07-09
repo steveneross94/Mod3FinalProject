@@ -305,3 +305,25 @@ textarea.form-control{
   font-weight: bold;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+#comment-btn {
+  margin-left: 79.3%;
+  background-color: #D6D8D9;
+  color: #212529;
+  border-color: #C6C8CA
+}
+.pull-right{
+  left: auto;
+    transform: translate(-100%, 130%);
+}
+.outer{
+  color: #B13B3D;
+  cursor: pointer;
+}
+.inner{
+  cursor: pointer;
+  color: #B13B3D;
+}
+svg.bi.bi-x-circle{
+  cursor: pointer;
+}
