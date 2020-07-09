@@ -4,18 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>All in One</title>
-   
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="#">FlatSpace</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-    
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
@@ -24,10 +22,7 @@
             </a>
               <!-- Here's the magic. Add the .animate and .slide-in classes to your .dropdown-menu and you're all set! -->
               <div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" id="edit-info" href="#">Edit Info</a>
-                <a class="dropdown-item" id="edit-profile-picture" href="#">Edit Profile Picture</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something Else</a>
+                <a class="dropdown-item" id="edit-info">Edit Info</a>
               </div>
             </li>
           </ul>
@@ -35,8 +30,7 @@
       </div>
     </nav>
     <div class="grid-container">
-      <div class="user-info">  
-      
+      <div class="user-info">
       </div>
       <div class="pictures"><header>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -79,7 +73,7 @@
             </div>
             <div class="carousel-item" style="background-image: url('assets/images/IMG_0884.JPG')">
               <div class="carousel-caption d-none d-md-block">
-                <p class="lead">AAAAAAAAAAAAAAAAH</p>
+                <p class="lead">ALAN! ALAN! ALAN! ALAAAN!</p>
               </div>
             </div>
           </div>
@@ -94,11 +88,9 @@
         </div>
       </header>
       </div>
-    
       <div class="song-bar">
         <div class="container">
               <h3 class="font-weight-light text-center text-lg-left mt-4 mb-0">Song Gallery</h3>
-
           <hr class="mt-2 mb-5">
            <div id='showMore' class="alert alert-dark" role="alert">
        Show More <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -106,20 +98,14 @@
         <path fill-rule="evenodd" d="M8 2.5a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-1 0V3a.5.5 0 0 1 .5-.5z"/>
       </svg>
       </div>
-
           <div id="model"class="row text-center text-lg-left open" style ="overflow: hidden;">
-
-          
           </div>
-         
         </div>
-       
       </div>
         <div class="comments">
             <ul id="posts" class="comment-list">
               <div class="my-3 p-3 bg-white rounded box-shadow">
                 <h6 class="border-bottom border-gray pb-2 mb-0">Recent Post</h6>
-               
             </ul>
             <div class="form-group">
               <form>
@@ -127,25 +113,19 @@
               <textarea name="post" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write a Post Here..."></textarea>   <button type="submit" class="btn btn-primary mb-2" id="comment-btn">Post</button>
                   </form>
             </div>
-        
-      
         </div>
-        <br><br><br><br> <br><br><br><br> 
+     <br><br><br><br> <br><br><br><br>
     </div>
-     
-    
-   
+    <footer id="footer" class="py-4 bg-dark text-white-50">
+      <div class="container text-center">
+        <small>Copyright &copy; M&R Development</small>
+      </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> 
     <script type="text/javascript" src="src/script.js"></script>
     <script type="text/javascript" src="src/user.js"></script>
-
-
-    <footer id="footer" class="py-4 bg-dark text-white-50">
-      <div class="container text-center">
-        <small>Copyright &copy; M&R Development</small>
-      </div>
-     </footer> 
+    <script type="text/javascript" src="src/edit.js"></script>
   </body>
   </html>
