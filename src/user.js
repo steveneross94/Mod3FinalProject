@@ -43,11 +43,14 @@ document.addEventListener("DOMContentLoaded", () => {
         })
 
         userInfo.innerHTML = `
+        
         <img id="imgurl" name='${user.img_url}'src='${user.img_url}'>
-        <h3 id="username">${user.username}</h3>
-        <h6 id="location">Location: ${user.location}</h6> 
-        <h6 id="about">About: ${user.about}</h6>
-        <h6 id="interests">Interests: ${user.interest}</h6>
+        <div class='user-traits'>
+            <h3 id="username">${user.username}</h3>
+            <h6 id="location">Location: ${user.location}</h6> 
+            <h6 id="about">About: ${user.about}</h6>
+            <h6 id="interests">Interests: ${user.interest}</h6>
+        </div>
         `
     }
 
