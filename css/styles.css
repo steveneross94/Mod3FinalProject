@@ -1,14 +1,20 @@
-/* body {
-  background-color: #FFFAFF;
-} */
+body {
+  background-color: #F1f1f1;
+  margin: 10px
+}
 .grid-container {
   display: grid;
   gap: 1px 1px;
   grid-template-areas: "user-info pictures pictures pictures pictures" "user-info pictures pictures pictures pictures" "user-info comments comments comments comments" "user-info song-bar song-bar song-bar song-bar" "user-info . . . .";
 }
 
+.bg-light {
+  background-color: white;
+}
+
 .container {
-  padding: 0px
+  padding: 0px;
+
 }
 
 .button {
@@ -21,7 +27,7 @@
   margin-bottom: 10px;
   display: block;
   width: 100%;
-  background-color: #f1f1f1;
+  background-color: white;
 
   border: 1px solid rgba(0, 0, 0, 0.1);
 
@@ -42,7 +48,8 @@
 
 .user-info { grid-area: user-info; 
 margin: 10px;
-background-color:#f1f1f1;
+margin-left: 0px;
+background-color: white;
 font-family: 'Times New Roman', Times, serif;
 border-radius: 15px;
 }
@@ -52,17 +59,19 @@ margin-left: 150px;
 margin-top: 10px;
 width: 60%;
 height: auto;
-
+border: 1px solid rgba(0, 0, 0, 0.1);
 border-radius: 50%;
 }
 
 #navbar {
-  background-color:#f1f1f1;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .user-info > h3 {
   padding-top: 10px;
   padding-left: 10px;
 }
+
 
 .user-info > h6, li {
   padding-left: 10px;
@@ -99,7 +108,7 @@ height: auto
 
 display: block;
 width: 100%;
-background-color:#f1f1f1;
+background-color: white;
 
 border: 1px solid rgba(0, 0, 0, 0.1);
 
@@ -168,6 +177,7 @@ height: auto;
   
   #showMore{
     text-align: center;
+    background-color: #F1f1f1;
   }
 
 
@@ -272,7 +282,7 @@ textarea.form-control{
 }
 
 #location {
-  background-color: #DFDFDF;
+  background-color: #F1f1f1;
   border-radius: 15px;
   margin-left: 10px;
   margin-right: 10px;
@@ -281,7 +291,7 @@ textarea.form-control{
 }
 
 #about {
-  background-color: #DFDFDF;
+  background-color: #F1f1f1;
   border-radius: 15px;
   margin-left: 10px;
   margin-right: 10px;
@@ -289,7 +299,7 @@ textarea.form-control{
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 #interests {
-  background-color: #DFDFDF;
+  background-color: #F1f1f1;
   border-radius: 15px;
   margin-left: 10px;
   margin-right: 10px;
@@ -298,7 +308,7 @@ textarea.form-control{
 }
 
 #username {
-  background-color: #DFDFDF;
+  background-color: #F1f1f1;
   border-radius: 15px;
   margin-left: 10px;
   margin-right: 10px;
@@ -308,7 +318,7 @@ textarea.form-control{
 
 #comment-btn {
   margin-left: 79.3%;
-  background-color: #D6D8D9;
+  background-color: #F1f1f1;
   color: #212529;
   border-color: #C6C8CA
 }
@@ -327,3 +337,9 @@ textarea.form-control{
 svg.bi.bi-x-circle{
   cursor: pointer;
 }
+
+#post-container {
+margin-right: 30px
+
+}
+
