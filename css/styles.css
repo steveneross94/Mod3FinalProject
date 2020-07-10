@@ -45,6 +45,7 @@ font-family: 'Times New Roman', Times, serif;
 border-radius: 15px;
 }
 .user-info > img {
+
   box-shadow:0 0 15px #212529;
   transform: translate(15%, -2%);
   align-items: center;
@@ -56,6 +57,7 @@ border-radius: 15px;
   margin-top: 15px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+
 }
 #navbar {
   background: white;
@@ -87,6 +89,8 @@ border-radius: 15px;
 }
 .pictures { grid-area: pictures;
 object-position: center;
+
+
 }
 .comments { grid-area: comments;
   margin-top: 10px;
